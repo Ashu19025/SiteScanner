@@ -1,7 +1,7 @@
 {
   "name": "website-analysis-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "module",
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google/genai": "^1.14.0",
     "axios": "^1.11.0",
     "cheerio": "^1.1.2",
     "cors": "^2.8.5",
