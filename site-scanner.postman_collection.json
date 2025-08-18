@@ -1,0 +1,65 @@
+{
+  "info": {
+    "name": "Site Scanner API",
+    "_postman_id": "d5a1d9a7-8a77-4a9c-91a5-4a0fef1d9f23",
+    "description": "Postman collection for testing Site Scanner API (scraping & DB)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Add Website",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"url\": \"https://instagram.com\"\n}"
+        },
+        "url": {
+          "raw": "https://sitescanner.onrender.com/api/website",
+          "protocol": "https",
+          "host": ["sitescanner", "onrender", "com"],
+          "path": ["api", "website"]
+        }
+      }
+    },
+    {
+      "name": "Get All Websites",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://sitescanner.onrender.com/api/website",
+          "protocol": "https",
+          "host": ["sitescanner", "onrender", "com"],
+          "path": ["api", "website"]
+        }
+      }
+    },
+    {
+      "name": "Get Website by ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://sitescanner.onrender.com/api/website/:id",
+          "protocol": "https",
+          "host": ["sitescanner", "onrender", "com"],
+          "path": ["api", "website", ":id"]
+        }
+      }
+    },
+    {
+      "name": "Delete Website",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "https://sitescanner.onrender.com/api/website/:id",
+          "protocol": "https",
+          "host": ["sitescanner", "onrender", "com"],
+          "path": ["api", "website", ":id"]
+        }
+      }
+    }
+  ]
+}
