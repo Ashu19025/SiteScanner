@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.post("/",analyzeWebsite);
 
-router.get("/:id",getWebsites);
+router.get("/",getWebsites);
 
 router.put("/:id",updateWebsite);
 
